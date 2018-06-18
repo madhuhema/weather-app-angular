@@ -1,0 +1,12 @@
+<div>
+    <input type="search" class="form-control" placeholder="Enter City Here..." #cityName>
+    <button (click)="onBtnClick(cityName.value)">Search</button>
+</div>
+<div class="container">
+    <app-summary [summaryInfo]="weatherService.summary"></app-summary>
+    <app-temperature [tempInfo]="weatherService.temperature"></app-temperature>
+    <app-tpw [tpwInfo]="weatherService.tpw"></app-tpw>
+    <app-chart></app-chart>
+    <app-day-tile></app-day-tile>
+</div>
+
